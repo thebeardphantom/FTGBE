@@ -34,7 +34,7 @@ int Program::mainLoop()
 		while (SDL_PollEvent(&event) != 0)
 		{
 #ifdef VERBOSE
-			printf("EVENT %s\n", std::to_string(event.type).c_str());
+			printf("EVENT %s             \r", std::to_string(event.type).c_str());
 #endif
 			if (event.type == SDL_QUIT)
 			{
