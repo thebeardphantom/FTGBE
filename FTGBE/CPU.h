@@ -36,7 +36,7 @@ public:
 	void tick();
 
 private:
-	OpCode memory[1024 * 16];
+	unsigned char memory[1024 * 32];
 	int interruptPeriod;
 	int counter;
 
